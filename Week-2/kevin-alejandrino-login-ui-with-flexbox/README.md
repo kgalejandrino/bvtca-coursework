@@ -49,5 +49,5 @@ Additional things you are welcome to experiment with:
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to bay valley tech code academy bootcamp course project. The goal was to build an application to complete the given user stories.
+This application/site was created as a submission to [bay valley tech code academy](https://www.bayvalleytech.com/) bootcamp course project. The goal was to build an application to complete the given user stories.
 
