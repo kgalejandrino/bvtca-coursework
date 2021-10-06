@@ -80,6 +80,7 @@ input[type="password"] {
 .left {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .left span { padding-left: 4px; }
@@ -93,6 +94,11 @@ button {
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e63815;
 }
 
 /* MEDIA QUERY */
