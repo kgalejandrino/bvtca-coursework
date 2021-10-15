@@ -3,7 +3,7 @@ body {
     height: 100vh;
 }
 
-/* REUSABLE */
+/*--- Reusable Styling ---*/
 input[type="text"] {
     border: none; 
     border-radius: 0;
@@ -219,7 +219,7 @@ input[type="text"] {
 }
 
 /*--- MEDIA QUERIES --- */
-@media only screen and (max-width: 1300px) {
+@media (max-width: 1300px) {
     #email-msg-wrapper { padding: 48px 48px; }
     
     #sidebar { width: 260px; }
@@ -229,24 +229,24 @@ input[type="text"] {
     #textarea-wrapper {  margin-top: 60px; }
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     #email-msg-wrapper { padding: 48px 24px; }
 
     #email-subject h3 { font-size: 24px; }
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
     #main { padding-left: 0; }
 
     .my-navbar-collapse { display: block;}
 
 }
 
-@media only screen and (max-width: 575px) {
+@media (max-width: 575px) {
     #my-collapse-search { width: 70%; }
 }
 
-@media only screen and (max-width: 450px) {
+@media (max-width: 450px) {
     #email-msg-wrapper { padding: 24px 24px; }
     #my-collapse-search { width: 60%; }
 }
