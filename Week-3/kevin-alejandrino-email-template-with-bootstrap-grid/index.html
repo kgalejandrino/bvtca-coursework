@@ -13,10 +13,9 @@
     <!-- Navbar Collapse-->
     <nav class="navbar navbar-dark d-block d-md-none" id="my-navbar">
         <div id="my-collapse-container">
-            <div class="position-relative" id="my-search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" id="icon-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
+            <div id="user-collapse">K</div>
+            <div class="position-relative" id="my-collapse-search">
+                <span class="material-icons icon-search">search</span>
                 <input type="text" id="my-collapse-input" placeholder="Search for emails">
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,13 +32,16 @@
             <a class="nav-link my-link my-link-collapse" href="#">Drafts</a>
             <a class="nav-link my-link my-link-collapse" href="#">Trash</a>
         </div>
+        <div id="btn-collapse-wrapper">
+            <button type="button" class="btn btn-md text-white my-btn">Compose</button>
+        </div>
     </div>
 
     <!-- Container Grid -->
     <div class="container-fluid vh-100">
         <div class="row h-100">
             <!-- Sidebar -->
-            <div class="d-none d-md-block" id="sidebar">
+            <div class="d-none d-md-block px-0" id="sidebar">
                 <!-- User welcome message -->
                 <div class="d-flex align-items-center mt-5 ms-4" id="top">
                     <div class="bg-white rounded-circle" id="user-image">
@@ -51,10 +53,10 @@
                     <span class="ps-2 text-white">Welcome, Kevin</span>
                 </div>
                 <!-- Button Compose -->
-                <button type="button" class="btn btn-lg my-5 ms-4 w-75 text-white" id="btn">Compose</button>
+                <button type="button" class="btn btn-lg my-5 ms-4 w-75 text-white my-btn">Compose</button>
                 <!-- Sidebar navigations-->
-                <div class="navbar-nav ms-4">
-                    <a class="nav-link active my-link" href="#">Inbox (1)</a>
+                <div class="navbar-nav">
+                    <a class="nav-link my-link active" href="#">Inbox (1)</a>
                     <a class="nav-link my-link" href="#">Tagged</a>
                     <a class="nav-link my-link" href="#">Important</a>
                     <a class="nav-link my-link" href="#">Sent Email</a>
@@ -70,9 +72,7 @@
                     <div class="col-lg-5 col-xl-4" id="list-of-emails">
                         <!-- Input Search-->
                         <div class="mt-5 position-relative d-none d-md-block" id="my-search">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" id="icon-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg>
+                            <span class="material-icons icon-search">search</span>
                             <input type="text" id="my-input" placeholder="Search for emails">
                         </div>
                         <!-- Cards-->
@@ -88,31 +88,31 @@
                         <div class="card my-4 my-card">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="card-title fw-bold">Michael Scott Daily Quotes</h6>
-                                    <p class="card-text">July 3, 2020</p>
+                                    <h6 class="card-title fw-bold">Quincy Larson</h6>
+                                    <p class="card-text">Oct 3, 2021</p>
                                 </div>
-                                <p class="card-text">I'm optimistic because everyday I get a little more desp...</p>
+                                <p class="card-text">Learn how Git branches work [free Git course]</p>
                             </div>
                         </div>
                         <div class="my-4 my-card">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="card-title fw-bold">LaMar Software</h6>
-                                    <p class="card-text">Feb 9, 2020</p>
+                                    <h6 class="card-title fw-bold">Bay Valley Tech.</h6>
+                                    <p class="card-text">Sept 18, 2021</p>
                                 </div>
-                                <p class="card-text">Learn how you can give us money by calling (209) 322 7...</p>
+                                <p class="card-text">You have been accepted to Bay Valley Tech Code Academy...</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Column 2: Email Message -->
-                    <div class="col-lg-7 col-xl-8 pt-5" id="email-msg-wrapper">
+                    <div class="col-lg-7 col-xl-8" id="email-msg-wrapper">
                         <div class="d-flex flex-column" id="email-header">
                             <span>To:taylor@lamarsoftware.io</span>
                             <span>re-reply@theofficenbc.com</span>
                         </div>
                         <div class="d-flex justify-content-between align-items-center" id="email-subject">
-                            <h3>Michael Scott Daily Quotes</h3>
+                            <h3>Learn how Git branches work</h3>
                             <div id="subject-icons">
                                 <span class="material-icons">delete</span>
                                 <span class="material-icons">reply</span>
@@ -120,16 +120,14 @@
                             </div>
                         </div>
                         <div id="email-msg">
-                            <p>"Friends joke with another.'Hey, you're poor.' 'Hey, your momma's dead.' That's what friends do."</p>
-                            <p>"It's a good thing Russia doesn't exist anymore."</p>
-                            <p>"You cheated on me? When I specifically asked you not to?"</p>
-                            <p>"It just seems awfully mean. But sometimes, the ends justify the mean."</p>
-                            <p>"Reverse psychology is an awesome tool. I don't know if you guys know about it, but, basically, you make someone think the opposite of what you believe, and that tricks them into doing something stupid. Works like a charm."</p>
+                            <p>1. How Git branches work. Most developers these days use the Git version control system to store their code and collaborate with other developers. And branches are one of the hardest Git concepts to learn. This crash course will explain Local VS Remote branches, how to create them, merging VS rebasing, and how the whole "detached head" thing works. (30 minute YouTube course): <a href="https://www.freecodecamp.org/news/how-git-branches-work/" target="_blank">https://www.freecodecamp.org/news/how-git-branches-work/</a></p>
+                            <p>2. The popular React front end development JavaScript library has a ton of new features coming soon. Learn what's new in React 18 Alpha: Concurrency, Batching, the Transition API, and more. (12 minute read): <a href="https://www.freecodecamp.org/news/whats-new-in-react-18/" target="_blank">https://www.freecodecamp.org/news/whats-new-in-react-18/</a></p>
+                            <p>What is the difference between UI and UX? A veteran designer breaks down the two disciplines of User Experience Design and User Interface Design, and shows how the fields have diverged over the past decade. (15 minute read): <a href="https://www.freecodecamp.org/news/ui-ux-design-guide/" target="_blank">https://www.freecodecamp.org/news/ui-ux-design-guide/</a></p>
                         </div>
                         <div class="position-relative" id="textarea-wrapper">
-                            <textarea class="w-100" rows="10" cols="50"></textarea>
+                            <textarea class="w-100"></textarea>
                             <span class="material-icons position-absolute">attach_file</span>
-                            <button class="position-absolute">Reply</button>
+                            <button class="btn btn-md position-absolute text-white my-btn">Reply</button>
                         </div>
                     </div>
                 </div>

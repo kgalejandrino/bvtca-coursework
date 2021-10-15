@@ -3,14 +3,18 @@ const card = document.querySelectorAll('.my-card');
 
 link.forEach(element => {
     element.addEventListener('click', function() {
-        document.querySelector('.active').classList.remove('active');
+        link.forEach(element => {
+            element.classList.remove('active');
+        })
         this.classList.add('active');
     })
 });
 
 card.forEach(element => {
     element.addEventListener('click', function() {
-        document.querySelector('.card').classList.remove('card');
+        card.forEach(element => {
+            element.classList.remove('card');
+        })
         this.classList.add('card');
     })
 });

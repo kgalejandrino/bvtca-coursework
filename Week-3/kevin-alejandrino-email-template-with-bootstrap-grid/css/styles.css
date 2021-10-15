@@ -8,11 +8,22 @@ input[type="text"] {
     border: none; 
     border-radius: 0;
     outline: none;
-    padding-left: 42px;
+    padding-left: 48px;
     color: #6e6e6e;
 }
 
-/* Column 1: Side Menu */
+.my-btn { background-color: #FE5F55; }
+
+.my-btn:hover { background-color: #fd3f31; }
+
+.icon-search {
+    color: #bdbdbd;
+    position: absolute;
+    z-index: 999;
+    font-size: 24px;
+}
+
+/*--- Sidebar ---*/
 #sidebar { 
     background-color: #333745; 
     width: 300px;
@@ -24,21 +35,21 @@ input[type="text"] {
 
 #user-image { padding: 12px; }
 
-#btn { background-color: #FE5F55; }
-
 .my-link { 
     font-size: 18px;
     color: #ccc;
+    padding-left: 24px !important;
 }
 
 .my-link:hover,
 .my-link:focus {
     color: #fff;
+    background-color: #4e5364;
 }
 
 .active { 
     color: #fff;
-    font-weight: 800; 
+    background-color: #4e5364;
 }
 
 /* --- MAIN ---*/
@@ -47,7 +58,7 @@ input[type="text"] {
     padding-right: 0;
 }
 
-/* Column 2: List of Emails */
+/* Column 1: List of Emails */
 #list-of-emails { 
     background-color: #ececec; 
     padding: 0;
@@ -65,12 +76,9 @@ input[type="text"] {
 
 .form-control::placeholder { color: #bdbdbd;}
 
-#icon-search {
-    color: #bdbdbd;
-    position: absolute;
-    z-index: 999;
+#my-search .icon-search {
     left: 12px;
-    top: 10px;
+    top: 8px;
 }
 
 .card {
@@ -91,16 +99,13 @@ input[type="text"] {
     cursor: pointer;
 }
 
-/* Column 3: Email Message */
+/* Column 2: Email Message */
 #email-msg-wrapper { 
-    padding: 0 72px;
+    padding: 48px 72px;
     color: #6e6e6e;
-    font-size: 18px;
 }
 
 #email-header { font-size: 14px; }
-
-#email-msg { font-size: 18px;}
 
 #email-subject {
     margin-top: 24px;
@@ -112,7 +117,7 @@ input[type="text"] {
 #subject-icons span { font-size: 22px; }
 
 #textarea-wrapper {
-    margin-top: 120px;
+    margin-top: 80px;
     margin-bottom: 20px;
     color: #b8b8b8;
 }
@@ -125,6 +130,7 @@ input[type="text"] {
     color: #888888;
     padding: 8px;
     resize: none;
+    height: 240px;
 }
 
 #textarea-wrapper span {
@@ -139,16 +145,7 @@ input[type="text"] {
 #textarea-wrapper button {
     right: 16px;
     bottom: 10px;
-    border: none;
-    outline: none;
-    background-color: #FE5F55;
-    width: 80px;
-    padding: 6px 0;
-    color: #fff;
 }
-
-#textarea-wrapper button:hover { background-color: #fd3f31; }
-
 
 /* Collapse Navbar */
 #my-navbar { 
@@ -158,6 +155,7 @@ input[type="text"] {
 
 #my-collapse-container {
     display: flex;
+    justify-content: space-between;
     padding: 0 8px;
 }
 
@@ -174,44 +172,82 @@ input[type="text"] {
 }
 
 .my-navbar-collapse {
-    height: 100vh;
-    position: fixed;
+    height: auto;
+    position: absolute;
     top: 60;
     left: 0;
     z-index: 9999;
     width: 100%;
     background-color: #333745;
     border-top: 1px solid #ccc;
+    display: none;
+    padding-bottom: 24px;
+}
+
+#user-collapse {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #FE5F55;  
+    padding: 0 16px;
+    font-size: 18px;
+}
+
+#my-collapse-search { width: 80%; }
+
+#my-collapse-search .icon-search {
+    font-size: 28px;
+    top: 8px;
+    left: 10px;
 }
 
 #my-collapse-input { 
-    height: 40px; 
-    width: 90%;
+    height: 100%; 
+    width: 100%;
 }
 
 .my-link-collapse {
     margin-top: 24px;
     font-size: 20px;
 }
+
+#btn-collapse-wrapper {
+    display: flex;
+    justify-content: end;
+    margin-right: 12px;
+}
+
 /*--- MEDIA QUERIES --- */
 @media only screen and (max-width: 1300px) {
-    #email-msg-wrapper { padding: 28px 48px; }
+    #email-msg-wrapper { padding: 48px 48px; }
     
     #sidebar { width: 260px; }
     
     #main { padding-left: 260px;}
 
-    #textarea-wrapper {  margin-top: 80px; }
+    #textarea-wrapper {  margin-top: 60px; }
 }
 
 @media only screen and (max-width: 1200px) {
-    #email-msg-wrapper { padding: 16px 24px; }
+    #email-msg-wrapper { padding: 48px 24px; }
 
     #email-subject h3 { font-size: 24px; }
-    
 }
 
-@media only screen and (max-width: 768px) {
-    #main { padding-left: 0px;}
+@media only screen and (max-width: 767px) {
+    #main { padding-left: 0; }
+
+    .my-navbar-collapse { display: block;}
+
+}
+
+@media only screen and (max-width: 575px) {
+    #my-collapse-search { width: 70%; }
+}
+
+@media only screen and (max-width: 450px) {
+    #email-msg-wrapper { padding: 24px 24px; }
+    #my-collapse-search { width: 60%; }
 }
 
