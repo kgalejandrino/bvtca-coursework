@@ -38,102 +38,100 @@
     </div>
 
     <!-- Container Grid -->
-    <div class="container-fluid vh-100">
-        <div class="row h-100">
-            <!-- Sidebar -->
-            <div class="d-none d-md-block px-0" id="sidebar">
-                <!-- User welcome message -->
-                <div class="d-flex align-items-center mt-5 ms-4" id="top">
-                    <div class="bg-white rounded-circle" id="user-image">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
-                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                            <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
-                        </svg>
-                    </div>
-                    <span class="ps-2 text-white">Welcome, Kevin</span>
+    <div class="container-fluid ">
+        <!-- Sidebar -->
+        <div class="d-none d-md-block px-0" id="sidebar">
+            <div class="d-flex align-items-center mt-5 ms-4" id="top">
+                <div class="bg-white rounded-circle" id="user-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                        <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                    </svg>
                 </div>
-                <!-- Button Compose -->
-                <button type="button" class="btn btn-lg my-5 ms-4 w-75 text-white my-btn">Compose</button>
-                <!-- Sidebar navigations-->
-                <div class="navbar-nav">
-                    <a class="nav-link my-link active" href="#">Inbox (1)</a>
-                    <a class="nav-link my-link" href="#">Tagged</a>
-                    <a class="nav-link my-link" href="#">Important</a>
-                    <a class="nav-link my-link" href="#">Sent Email</a>
-                    <a class="nav-link my-link" href="#">Drafts</a>
-                    <a class="nav-link my-link" href="#">Trash</a>
-                </div>
+                <span class="ps-2 text-white">Welcome, Kevin</span>
             </div>
+            <button type="button" class="btn btn-lg my-5 ms-4 w-75 text-white my-btn">Compose</button>
+            <div class="navbar-nav">
+                <a class="nav-link my-link active" href="#">Inbox (1)</a>
+                <a class="nav-link my-link" href="#">Tagged</a>
+                <a class="nav-link my-link" href="#">Important</a>
+                <a class="nav-link my-link" href="#">Sent Email</a>
+                <a class="nav-link my-link" href="#">Drafts</a>
+                <a class="nav-link my-link" href="#">Trash</a>
+            </div>
+        </div>
+        <!-- End of Sidebar -->
 
-            <!-- Main Content-->
-            <div id="main">
-                <div class="row h-100 mx-0">
-                    <!-- Column 1: List of Emails -->
-                    <div class="col-lg-5 col-xl-4" id="list-of-emails">
-                        <!-- Input Search-->
-                        <div class="mt-5 position-relative d-none d-md-block" id="my-search">
-                            <span class="material-icons icon-search">search</span>
-                            <input type="text" id="my-input" placeholder="Search for emails">
+        <!-- Row: Main -->
+        <div class="row h-100" id="main">
+            <!-- Column 1: List of Emails -->
+            <div class="col-lg-5 col-xl-4" id="list-of-emails">
+                <div class="mt-5 position-relative d-none d-md-block" id="my-search">
+                    <span class="material-icons icon-search">search</span>
+                    <input type="text" id="my-input" placeholder="Search for emails">
+                </div>
+                <!-- Cards-->
+                <div class="my-4 my-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="card-title fw-bold">LinkedIn</h6>
+                            <p class="card-text">02:45pm</p>
                         </div>
-                        <!-- Cards-->
-                        <div class="my-4 my-card">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="card-title fw-bold">LinkedIn</h6>
-                                    <p class="card-text">02:45pm</p>
-                                </div>
-                                <p class="card-text">You have a new connection request.</p>
-                            </div>
-                        </div>
-                        <div class="card my-4 my-card">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="card-title fw-bold">Quincy Larson</h6>
-                                    <p class="card-text">Oct 3, 2021</p>
-                                </div>
-                                <p class="card-text">Learn how Git branches work [free Git course]</p>
-                            </div>
-                        </div>
-                        <div class="my-4 my-card">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="card-title fw-bold">Bay Valley Tech.</h6>
-                                    <p class="card-text">Sept 18, 2021</p>
-                                </div>
-                                <p class="card-text">You have been accepted to Bay Valley Tech Code Academy...</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Column 2: Email Message -->
-                    <div class="col-lg-7 col-xl-8" id="email-msg-wrapper">
-                        <div class="d-flex flex-column" id="email-header">
-                            <span>To:taylor@lamarsoftware.io</span>
-                            <span>re-reply@theofficenbc.com</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center" id="email-subject">
-                            <h3>Learn how Git branches work</h3>
-                            <div id="subject-icons">
-                                <span class="material-icons">delete</span>
-                                <span class="material-icons">reply</span>
-                                <span class="material-icons">more_horiz</span>
-                            </div>
-                        </div>
-                        <div id="email-msg">
-                            <p>1. How Git branches work. Most developers these days use the Git version control system to store their code and collaborate with other developers. And branches are one of the hardest Git concepts to learn. This crash course will explain Local VS Remote branches, how to create them, merging VS rebasing, and how the whole "detached head" thing works. (30 minute YouTube course): <a href="https://www.freecodecamp.org/news/how-git-branches-work/" target="_blank">https://www.freecodecamp.org/news/how-git-branches-work/</a></p>
-                            <p>2. The popular React front end development JavaScript library has a ton of new features coming soon. Learn what's new in React 18 Alpha: Concurrency, Batching, the Transition API, and more. (12 minute read): <a href="https://www.freecodecamp.org/news/whats-new-in-react-18/" target="_blank">https://www.freecodecamp.org/news/whats-new-in-react-18/</a></p>
-                            <p>What is the difference between UI and UX? A veteran designer breaks down the two disciplines of User Experience Design and User Interface Design, and shows how the fields have diverged over the past decade. (15 minute read): <a href="https://www.freecodecamp.org/news/ui-ux-design-guide/" target="_blank">https://www.freecodecamp.org/news/ui-ux-design-guide/</a></p>
-                        </div>
-                        <div class="position-relative" id="textarea-wrapper">
-                            <textarea class="w-100"></textarea>
-                            <span class="material-icons position-absolute">attach_file</span>
-                            <button class="btn btn-md position-absolute text-white my-btn">Reply</button>
-                        </div>
+                        <p class="card-text">You have a new connection request.</p>
                     </div>
                 </div>
+                <div class="card my-4 my-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="card-title fw-bold">Quincy Larson</h6>
+                            <p class="card-text">Oct 3, 2021</p>
+                        </div>
+                        <p class="card-text">Learn how Git branches work [free Git course]</p>
+                    </div>
+                </div>
+                <div class="my-4 my-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="card-title fw-bold">Bay Valley Tech.</h6>
+                            <p class="card-text">Sept 18, 2021</p>
+                        </div>
+                        <p class="card-text">You have been accepted to Bay Valley Tech Code Academy...</p>
+                    </div>
+                </div>
+                <!-- End of Cards -->
             </div>
-        </div>        
+            <!-- End of Column 1 -->
+
+            <!-- Column 2: Email Message -->
+            <div class="col-lg-7 col-xl-8" id="email-msg-wrapper">
+                <div class="d-flex flex-column" id="email-header">
+                    <span>To:taylor@lamarsoftware.io</span>
+                    <span>re-reply@theofficenbc.com</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center" id="email-subject">
+                    <h3>Learn how Git branches work</h3>
+                    <div id="subject-icons">
+                        <span class="material-icons">delete</span>
+                        <span class="material-icons">reply</span>
+                        <span class="material-icons">more_horiz</span>
+                    </div>
+                </div>
+                <div id="email-msg">
+                    <p>1. How Git branches work. Most developers these days use the Git version control system to store their code and collaborate with other developers. And branches are one of the hardest Git concepts to learn. This crash course will explain Local VS Remote branches, how to create them, merging VS rebasing, and how the whole "detached head" thing works. (30 minute YouTube course): <a href="https://www.freecodecamp.org/news/how-git-branches-work/" target="_blank">https://www.freecodecamp.org/news/how-git-branches-work/</a></p>
+                    <p>2. The popular React front end development JavaScript library has a ton of new features coming soon. Learn what's new in React 18 Alpha: Concurrency, Batching, the Transition API, and more. (12 minute read): <a href="https://www.freecodecamp.org/news/whats-new-in-react-18/" target="_blank">https://www.freecodecamp.org/news/whats-new-in-react-18/</a></p>
+                    <p>What is the difference between UI and UX? A veteran designer breaks down the two disciplines of User Experience Design and User Interface Design, and shows how the fields have diverged over the past decade. (15 minute read): <a href="https://www.freecodecamp.org/news/ui-ux-design-guide/" target="_blank">https://www.freecodecamp.org/news/ui-ux-design-guide/</a></p>
+                </div>
+                <div class="position-relative" id="textarea-wrapper">
+                    <textarea class="w-100"></textarea>
+                    <span class="material-icons position-absolute">attach_file</span>
+                </div>
+                <button class="btn btn-md text-white my-btn" id="btn-send">Send</button>
+            </div>
+            <!-- End of Column 2-->
+        </div>
+        <!-- End of Row: Main -->
     </div>
+    <!-- End of Container -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
