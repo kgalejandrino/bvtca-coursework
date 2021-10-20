@@ -32,9 +32,6 @@
             <a class="nav-link my-link my-link-collapse" href="#">Drafts</a>
             <a class="nav-link my-link my-link-collapse" href="#">Trash</a>
         </div>
-        <div id="btn-collapse-wrapper">
-            <button type="button" class="btn btn-md text-white my-btn">Compose</button>
-        </div>
     </div>
 
     <!-- Container Grid -->
@@ -66,6 +63,9 @@
         <div class="row h-100" id="main">
             <!-- Column 1: List of Emails -->
             <div class="col-lg-5 col-xl-4" id="list-of-emails">
+                <div class="my-4 mx-auto d-block d-md-none" id="btn-collapse-wrapper">
+                    <button type="button" class="btn text-white my-btn w-100">Compose</button>
+                </div>
                 <div class="mt-5 position-relative d-none d-md-block" id="my-search">
                     <span class="material-icons icon-search">search</span>
                     <input type="text" id="my-input" placeholder="Search for emails">

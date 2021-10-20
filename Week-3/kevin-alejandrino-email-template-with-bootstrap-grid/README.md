@@ -2,7 +2,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://codepen.io/kgalejandrino/pen/ZEJbMLj">
+    <a href="https://codepen.io/kgalejandrino/full/ZEJbMLj">
       Demo
     </a>
     <span> | </span>
