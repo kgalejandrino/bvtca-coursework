@@ -259,6 +259,7 @@ input[type="text"] {
 
 @media (max-width: 450px) {
     #email-msg-wrapper { padding: 24px 24px; }
+    
     #my-collapse-search { width: 60%; }
 }
 

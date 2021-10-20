@@ -10,32 +10,34 @@
     <title>Email Template with Boostrap Grid</title>
 </head>
 <body>
-    <!-- Navbar Collapse-->
-    <nav class="navbar navbar-dark d-block d-md-none" id="my-navbar">
-        <div id="my-collapse-container">
-            <div id="user-collapse">K</div>
-            <div class="position-relative" id="my-collapse-search">
-                <span class="material-icons icon-search">search</span>
-                <input type="text" id="my-collapse-input" placeholder="Search for emails">
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
-    <div class="my-navbar-collapse collapse" id="navbarToggleExternalContent">
-        <div class="navbar-nav">
-            <a class="nav-link active my-link my-link-collapse" href="#">Inbox (1)</a>
-            <a class="nav-link my-link my-link-collapse" href="#">Tagged</a>
-            <a class="nav-link my-link my-link-collapse" href="#">Important</a>
-            <a class="nav-link my-link my-link-collapse" href="#">Sent Email</a>
-            <a class="nav-link my-link my-link-collapse" href="#">Drafts</a>
-            <a class="nav-link my-link my-link-collapse" href="#">Trash</a>
-        </div>
-    </div>
-
     <!-- Container Grid -->
     <div class="container-fluid ">
+        <!-- Navbar Collapse-->
+        <div class="row">
+            <nav class="navbar navbar-dark d-block d-md-none" id="my-navbar">
+                <div id="my-collapse-container">
+                    <div id="user-collapse">K</div>
+                    <div class="position-relative" id="my-collapse-search">
+                        <span class="material-icons icon-search">search</span>
+                        <input type="text" id="my-collapse-input" placeholder="Search for emails">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+            <div class="my-navbar-collapse collapse" id="navbarToggleExternalContent">
+                <div class="navbar-nav">
+                    <a class="nav-link active my-link my-link-collapse" href="#">Inbox (1)</a>
+                    <a class="nav-link my-link my-link-collapse" href="#">Tagged</a>
+                    <a class="nav-link my-link my-link-collapse" href="#">Important</a>
+                    <a class="nav-link my-link my-link-collapse" href="#">Sent Email</a>
+                    <a class="nav-link my-link my-link-collapse" href="#">Drafts</a>
+                    <a class="nav-link my-link my-link-collapse" href="#">Trash</a>
+                </div>
+            </div>
+        </div>
+        
         <!-- Sidebar -->
         <div class="d-none d-md-block px-0" id="sidebar">
             <div class="d-flex align-items-center mt-5 ms-4" id="top">
