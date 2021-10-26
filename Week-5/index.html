@@ -3,16 +3,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 	
-    <link rel="icon" type="image/x-icon" href="./img/white-logo.png" />
+    <link rel="icon" type="image/x-icon" href="./img/white-mobile-logo.png" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script src="https://kit.fontawesome.com/8c9bb54147.js" crossorigin="anonymous"></script>
     <title>Nemirk Pc Builds</title>
 </head>
 <body>
     <!-- HEADER -->
     <header id="header">
-        <nav class="main-nav">
-            <img src="img/white-textlogo.png" alt="NemirkPcBuild Logo" class="logo"/>
+        <nav class="main-nav row">
+            <img src="img/white-main-logo.png" alt="NemirkPcBuild logo with text" class="logo" id="main-logo"/>
+            <img src="img/white-mobile-logo.png" alt="NemirkPcBuild logo" class="logo" id="mobile-logo"/>
             <ul>
                 <li><a>Build a Pc</a></li>
                 <li><a>Pre-Built Pc</a></li>
@@ -22,7 +25,69 @@
                 <p>Account</p>
                 <p>Cart</p>
             </div>
+            <div class="collapse-menu">
+                <span><i class="fas fa-user"></i></span>
+                <span><i class="fas fa-shopping-cart"></i></span>
+                <span><i class="fas fa-bars"></i></span>
+            </div>
         </nav>
+        <div class="hero-text-box row">
+            <p>Take your gaming experience to the next level.</p>
+            <p>Goodbye Crappy Builds.</p>
+            <p>Hello dream gaming setup.</p>
+        </div>
     </header>
+
+    <!-- Section: Services -->
+    <section class="section-services row">
+            <h1>Upgrade your pc &mdash; Boost your FPS</h1>
+            <p class="long-text services-desc">Hello, we’re NemirkPcBuilds and we offer wide range of services such as gaming and streaming configuration, network and system configuration, data recovery and many more. Not sure why your computer is lagging or running slow? Let’s take care of that and get you ready to play at high level. </p>
+            <div class="card-container">
+                <div class="card">
+                    <span><i class="fas fa-level-up-alt"></i></span>
+                    <h2>Performance</h2>
+                    <p>As a gamer ourselves at NemirkPcBuilds, we understand the frustration of sudden fps drops and we want you to get that winner winner chicken dinner. With that, our team makes sure that our PCs are optimized to its max performance. </p>
+                </div>
+                <div class="card">
+                    <span><i class="fas fa-tools"></i></span>
+                    <h2>Testing</h2>
+                    <p>Gaming has evolved over the years and so  has the system requirements. We can guarantee you that our pc meets high standard quality and is put thru a series of test to perform at peak level. </p>
+                </div>
+                <div class="card">
+                    <span><i class="fas fa-headset"></i></span>
+                    <h2>Support</h2>
+                    <p>To ensure our customers satisfaction, you will be connected directly to our team of IT. We prioritize that your questions/issues be answered or resolved as quickly as possible. </p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Section: Recent Builds-->
+    <section class="section-builds">
+        <figure><img src="img/build1.jpg" alt="pc build with red rgb" /></figure>
+        <figure><img src="img/build2.jpg" alt="pc build with red rgb" /></figure>
+        <figure><img src="img/build3.jpg" alt="pc build with red rgb" /></figure>
+        <figure><img src="img/build4.jpg" alt="pc build with red rgb" /></figure>
+        <figure><img src="img/build5.jpg" alt="pc build with red rgb" /></figure>
+        <figure><img src="img/build6.jpg" alt="pc build with red rgb" /></figure>
+        <figure><img src="img/build7.jpg" alt="pc build with red rgb" /></figure>
+        <figure><img src="img/build8.jpg" alt="pc build with red rgb" /></figure>
+    </section>
+
+    <!-- Section: Shop -->
+    <section class="section-shop row">
+        <h1>Build Now &mdash; Buy Now </h1>
+        <div class="shop-flex">
+            <div class="shop-img--container">
+                <img src="img/rainbow-build.png" alt="pc build with rainbow rgb light and white case" />
+            </div>
+            <div class="shop-desc--container">
+                <p class="long-text shop-desc">Nemirk pc is available in full customization. Schedule an appointment with one of our IT and we can guide you from component selection to building your dream gaming setup.</p>
+                <div class="btn-container">
+                    <button class="btn">Build</button>
+                    <button class="btn">Shop</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

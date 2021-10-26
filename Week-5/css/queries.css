@@ -1,0 +1,72 @@
+/*--- MEDIA QUERIES ---*/
+@media (max-width: 1200px) {
+    /* Section: Shop */
+    .shop-desc { margin-top: 120px; }
+}
+
+@media (max-width: 992px) {
+    /*--- HEADER ---*/
+    .collapse-menu { display: block; }
+
+    /* Main Navigation */
+    .main-nav ul, .account-container  { display: none; }
+
+    /* Hero Text Box */
+    .hero-text-box p { font-size: 36px; }
+
+    .hero-text-box p:first-child { font-size: 18px; }
+
+    /* Section: Services */
+    .services-desc { width: 100%; }
+
+    .card-container { justify-content: space-between; }
+
+    /* Section: Shop */
+    .shop-desc { margin-top: 60px; }
+}
+
+@media (max-width: 768px) {
+    /* Reusable Styling */
+    .long-text { font-size: 20px; }
+    /*--- HEADER ---*/
+    #mobile-logo { display: block; }
+
+    #main-logo { display: none; }
+
+    /* Hero Text Box */
+    .hero-text-box p { font-size: 28px; }
+
+    .hero-text-box p:first-child { font-size: 16px; }
+
+    /* HEADINGS */
+    h1 { font-size: 24px;}
+
+    /* Section: Services */
+    .card-container { flex-direction: column; }
+
+    .card { 
+        width: 100%; 
+        margin-bottom: 24px;
+    }
+
+    /*--- Section: Recent Builds ---*/
+    .section-builds figure { width: 50%; }
+
+    /* Section: Shop */
+    .shop-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-img--container { width: 80%; }
+
+    .shop-desc--container { width: 100%; }
+
+    .btn-container { flex-direction: column; }
+
+    .btn { 
+        width: 100%;
+        margin-top: 18px;
+    }
+}
+
