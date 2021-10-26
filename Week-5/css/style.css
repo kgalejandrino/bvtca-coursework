@@ -4,3 +4,50 @@
     box-sizing: border-box;
 }
 
+
+body {
+    background-color: #181719;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+/* HEADER */
+#header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+/* Main Navigation */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+    text-transform: uppercase;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    list-style-type: none;
+    padding-left: 24px;
+}
+
+.account-container {
+    display: flex;
+}
+
+.account-container p {
+    padding-left: 24px;
+}
