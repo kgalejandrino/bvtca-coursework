@@ -125,6 +125,9 @@ h2 {
     text-transform: none;
 }
 
+.hero-text-box button {
+    margin-top: 12px;
+}
 /*--- Section: Services ---*/
 .services-desc {
     width: 80%;
