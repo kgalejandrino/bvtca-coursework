@@ -16,18 +16,25 @@
 
     .hero-text-box p:first-child { font-size: 18px; }
 
-    /* Section: Services */
+    /*--- Section: Services ---*/
     .services-desc { width: 100%; }
 
-    .card-container { justify-content: space-between; }
+    .services-card--container { justify-content: space-between; }
 
-    /* Section: Shop */
+    /*--- Section: Shop ---*/
     .shop-desc { margin-top: 60px; }
+
+    /*--- Footer ---*/
+    .footer-card { width: 30%; }
+    
+    /* Links */
+    .footer-links { padding-left: 40px; }
 }
 
 @media (max-width: 768px) {
-    /* Reusable Styling */
+    /*--- Reusable Styling ---*/
     .long-text { font-size: 20px; }
+
     /*--- HEADER ---*/
     #mobile-logo { display: block; }
 
@@ -38,13 +45,13 @@
 
     .hero-text-box p:first-child { font-size: 16px; }
 
-    /* HEADINGS */
+    /*--- HEADINGS ---*/
     h1 { font-size: 24px;}
 
-    /* Section: Services */
-    .card-container { flex-direction: column; }
+    /*--- Section: Services ---*/
+    .services-card--container { flex-direction: column; }
 
-    .card { 
+    .services-card { 
         width: 100%; 
         margin-bottom: 24px;
     }
@@ -68,5 +75,28 @@
         width: 100%;
         margin-top: 18px;
     }
+}
+
+@media only screen and (max-width: 660px) {
+    .footer-wrapper { flex-direction: column; }
+
+    .footer-card {
+        width: 100%;
+        margin-bottom: 28px;
+    }
+
+    /* Links */
+    .footer-links { padding-left: 0; }
+}
+
+@media only screen and (max-width: 475px) {
+    .bottom-footer p {
+        padding: 0 2px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .bottom-footer p { font-size: 12px; }
 }
 
