@@ -29,7 +29,7 @@ li { list-style-type: none; }
     margin-right: auto;
 }
 
-section { margin: 48px 0; }
+section { margin: 120px 0; }
 
 .long-text {
     font-size: 22px;
@@ -80,14 +80,17 @@ h2 {
 #main-logo {
     height: 60px;
     width: auto;
+    z-index: 999;
 }
 
 #mobile-logo { 
     display: none; 
     height: 45px;
     width: auto;
+    z-index: 999;
 }
 
+.js--collapse-nav { display: none; }
 /* Collapse Menu */
 .collapse-menu { 
     display: none; 
@@ -99,6 +102,13 @@ h2 {
     margin-left: 24px;
 }
 
+.close-menu {
+    z-index: 999;
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+}
+
 /* Main Navigation */
 .main-nav {
     display: flex;
@@ -108,9 +118,9 @@ h2 {
     text-transform: uppercase;
 }
 
-.main-nav ul { display: flex; }
+.nav-ul { display: flex; }
 
-.main-nav ul li { padding-left: 24px; }
+.nav-ul li { padding-left: 24px; }
 
 .account-container { display: flex; }
 
@@ -149,8 +159,8 @@ h2 {
 
 .services-card--container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 36px;
+    justify-content: space-between;
+    margin-top: 64px;
 }
 
 .services-card { width: 25%; }

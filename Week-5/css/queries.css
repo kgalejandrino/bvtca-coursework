@@ -9,7 +9,30 @@
     .collapse-menu { display: block; }
 
     /* Main Navigation */
-    .main-nav ul, .account-container  { display: none; }
+    .nav-ul, .account-container  { display: none; }
+
+    .js--nav-ul {
+        display: block;
+        position: absolute;
+        top: 140px;
+        left: 48px;
+        z-index: 999;
+        flex-direction: column;
+        font-size: 24px;
+    }
+
+    .js--nav-ul li { padding-top: 24px; }
+
+    .js--collapse-nav {
+        display: none;
+        position: absolute;
+        top: 0; 
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #000;
+        z-index: 100;
+    }
 
     /* Hero Text Box */
     .hero-text-box p { font-size: 36px; }

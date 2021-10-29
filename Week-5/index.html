@@ -13,10 +13,11 @@
 <body>
     <!-- HEADER -->
     <header id="header">
+        <div class="js--collapse-nav"></div>
         <nav class="main-nav row">
             <img src="img/white-main-logo.png" alt="NemirkPcBuild logo with text" id="main-logo"/>
             <img src="img/white-mobile-logo.png" alt="NemirkPcBuild logo" id="mobile-logo"/>
-            <ul>
+            <ul class="nav-ul">
                 <li><a>Build a Pc</a></li>
                 <li><a>Pre-Built Pc</a></li>
                 <li><a>Support</a></li>
@@ -28,8 +29,9 @@
             <div class="collapse-menu">
                 <span><i class="fas fa-user"></i></span>
                 <span><i class="fas fa-shopping-cart"></i></span>
-                <span><i class="fas fa-bars"></i></span>
+                <span class="js--menu"><i class="fas fa-bars"></i></span>
             </div>
+            <span class="close-menu"><i class="fas fa-times"></i></span>
         </nav>
         <div class="hero-text-box row">
             <p>Take your gaming experience to the next level.</p>
@@ -39,8 +41,10 @@
         </div>
     </header>
 
-    <!-- Section: Services -->
-    <section class="section-services row">
+    <!-- MAIN -->
+    <main>
+        <!-- Section: Services -->
+        <section class="section-services row">
             <h1>Upgrade your pc &mdash; Boost your FPS</h1>
             <p class="long-text services-desc">Hello, we’re NemirkPcBuilds and we offer wide range of services such as gaming and streaming configuration, network and system configuration, data recovery and many more. Not sure why your computer is lagging or running slow? Let’s take care of that and get you ready to play at high level. </p>
             <div class="services-card--container">
@@ -60,10 +64,10 @@
                     <p>To ensure our customers satisfaction, you will be connected directly to our team of IT. We prioritize that your questions/issues be answered or resolved as quickly as possible. </p>
                 </div>
             </div>
-    </section>
+        </section>
 
-    <!-- Section: Recent Builds-->
-    <section class="section-builds">
+        <!-- Section: Recent Builds-->
+        <section class="section-builds">
         <figure><img src="img/build1.jpg" alt="pc build with red rgb" /></figure>
         <figure><img src="img/build2.jpg" alt="pc build with red rgb" /></figure>
         <figure><img src="img/build3.jpg" alt="pc build with red rgb" /></figure>
@@ -72,10 +76,10 @@
         <figure><img src="img/build6.jpg" alt="pc build with red rgb" /></figure>
         <figure><img src="img/build7.jpg" alt="pc build with red rgb" /></figure>
         <figure><img src="img/build8.jpg" alt="pc build with red rgb" /></figure>
-    </section>
+        </section>
 
-    <!-- Section: Shop -->
-    <section class="section-shop row">
+        <!-- Section: Shop -->
+        <section class="section-shop row">
         <h1>Build Now &mdash; Buy Now </h1>
         <div class="shop-flex">
             <div class="shop-img--container">
@@ -89,10 +93,10 @@
                 </div>
             </div>
         </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
+        <!-- Footer -->
+        <footer>
         <div class="footer-wrapper">
             <div class="footer-about footer-card">
                 <img src="img/white-main-logo.png" alt="NemirkPcBuild logo with text" id="footer-logo"/>
@@ -129,6 +133,8 @@
             </div>
             <div class="credits-wrapper"><p>© 2021 NemirkPcBuilds. All rights reserved</p></div>
         </div>
-    </footer>
+        </footer>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
