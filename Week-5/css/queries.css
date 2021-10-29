@@ -115,6 +115,7 @@
 }
 
 @media only screen and (max-width: 475px) {
+    /*--- FOOTER ---*/
     .bottom-footer p {
         padding: 0 2px;
         font-size: 14px;
@@ -122,6 +123,7 @@
 }
 
 @media only screen and (max-width: 360px) {
+    /*--- FOOTER ---*/
     .bottom-footer p { font-size: 12px; }
 }
 
