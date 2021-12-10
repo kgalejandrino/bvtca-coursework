@@ -1,10 +1,32 @@
+.form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    box-shadow: none; 
+}
+
 .list-group-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.list-group-item+.list-group-item {
+    border-top-width: 1px;
+    border-radius: 0;
+}
+
+.list-group-item:first-child { 
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
 .icon-close {
     cursor: pointer;
-    color: red;
+    /* color: red; */
 }
+
+.icon-close:hover { transform: scale(1.1); }

@@ -16,20 +16,17 @@
                 <div class="card" id="test">
                     <h5 class="card-header">Task List</h5>
                     <div class="card-body">
-                        <div class="form-floating" id="task-form">
-                            <input type="text" class="form-control" id="task" name="task" placeholder="New Task">
-                            <label for="task">New Task</label>
-                            <button class="btn btn-info mt-3" value="Add Task" id="btn-add">Add Task</button>
-                        </div>
+                        <!-- <div class="form-floating" id="task-form"> -->
+                            <input type="text" class="form-control" id="task" name="task" placeholder="New Task" autocomplete="off">
+                            <!-- <label for="task">New Task</label> -->
+                            <button class="btn btn-primary mt-3" value="Add Task" id="btn-add">Add Task</button>
+                        <!-- </div> -->
                     </div>
                     <h5 class="card-header">Task</h5>
                     <div class="card-body">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="filter" name="filter" placeholder="Filter Task">
-                            <label for="filter">Filter Task</label>
+                        <input type="text" class="form-control" id="filter" name="filter" placeholder="Filter Task">
                         <ul class="list-group mt-4" id="task-lists"></ul>
-                        <button type="submit" class="btn btn-dark mt-3" value="Add Task">Filter Task</button>
-                        </div>
+                        <button type="submit" class="btn btn-danger mt-3" value="Clear task" id="btn-clear">Clear Task</button>
                     </div>
                 </div>
             </div>
